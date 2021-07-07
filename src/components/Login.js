@@ -64,7 +64,7 @@ function Login() {
 
     return (
         <Container className="login-container">
-            <div className="shadow mt-5 p-4 rounded">
+            <div className="shadow mt-5 p-4 rounded col-xs-12 col-md-4">
                 <h3 className="text-center mb-4">Login or Sign up</h3>
                 <Form>
                     <Form.Group controlId="formPlaintextEmail">
