@@ -32,3 +32,9 @@ a:link {
 .cursor-pointer {
 	cursor: pointer;
 }
+
+.task-details {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}

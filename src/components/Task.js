@@ -39,7 +39,7 @@ function Task({ id, data, usersData }) {
     return (
         <div key={id} className="shadow w-100 h-25 mt-3 mb-4 p-3 position-relative">
             <h4>{data.name}</h4>
-            <div className="d-flex justify-content-between mt-4">
+            <div className="task-details mt-4">
                 <div className="d-inline-flex"><span className="mt-2 text-secondary">Assignee:</span>
                     <Form.Group controlId="formGridUser" className="ms-3 ">
                         <Form.Control as="select" value={data.assignee} onChange={handleAssignee}>
@@ -48,7 +48,7 @@ function Task({ id, data, usersData }) {
                     </Form.Group>
                 </div>
                 <div className="mt-2"><span className="text-secondary">Reporter:</span><span className="ms-2">{data.reporter}</span></div>
-                <Form.Group controlId="formGridState">
+                <Form.Group controlId="formGridState" className="mt-3 mt-lg-0">
                     <Form.Control as="select" defaultValue={data.status} className={setStatusColor(data.status)} onChange={handleStatus}>
                         <option className={setStatusColor("to do")} value="TO DO">TO DO</option>
                         <option className={setStatusColor("in progress")} value="IN PROGRESS">IN PROGRESS</option>
