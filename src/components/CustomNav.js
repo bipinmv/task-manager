@@ -22,7 +22,7 @@ const CustomNavbar = () => {
     }
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" variant="light" sticky="top" className="bg-light">
+            <Navbar collapseOnSelect expand="lg" variant="dark" bg="primary" sticky="top">
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Brand >
                     <Nav.Link as={NavLink} to="/">
@@ -33,7 +33,7 @@ const CustomNavbar = () => {
                     <Nav className="ms-auto me-lg-4">
                         {token &&
                             <>
-                                <span className="text-dark me-3 mt-1">{email}</span>
+                                <span className="text-light me-3 mt-1">{email}</span>
                                 <Button className="" variant="dark" size="sm" onClick={logoutHandler}>Log out</Button>
                             </>
                         }
