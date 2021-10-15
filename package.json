@@ -1,6 +1,6 @@
 {
   "name": "task-manager",
-  "homepage": "https://bipinmv.github.io/task-manager",
+  "homepage": "/task-manager",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
