@@ -5,7 +5,7 @@ import CustomNav from "./components/CustomNav";
 
 function App() {
   return (
-    <BrowserRouter basename="/task-manager">
+    <BrowserRouter basename="/">
       <CustomNav />
     </BrowserRouter>
   );
